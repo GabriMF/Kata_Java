@@ -7,8 +7,13 @@ import org.junit.jupiter.api.Test;
 public class CharacterTest {
     
     @Test
-    public void ExampleTest() {
-        assertEquals(2, 2);
+    public void damageTest() {
+        //given
+        Character character = new Character();
+        //When
+        character.damage = 999;
+        //Then
+        int result = character.damageMaker();
+        assertEquals(1, result);
     }
-
 }
