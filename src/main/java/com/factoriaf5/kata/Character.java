@@ -1,6 +1,7 @@
 package com.factoriaf5.kata;
 
 public class Character {
+    public String characterName;
     public int health = 1000;
     public int level = 1;
     public boolean isAlive = true;
@@ -8,6 +9,8 @@ public class Character {
     public int currentHealth;
     public boolean canHeal;
     public int heal;
+
+// ================================================ \\
 
     public int damageMaker(){
         currentHealth = health - damage;

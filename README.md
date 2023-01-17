@@ -16,16 +16,16 @@ Just clone the Kata
 Complete each iteration before reading the next one. 2. It's recommended you perform this kata with a pairing partner and while writing tests.
 
 1. Iteration One:
-    - All Characters, when created, have:
-        * Health, starting at 1000 x
-        * Level, starting at 1 x
-        * May be Alive or Dead, starting Alive (Alive may be a true/false) x
-    - Characters can Deal Damage to Characters.
-        * Damage is subtracted from Health x
-        * When damage received exceeds current Health, Health becomes 0 and the character dies x
-    - A Character can Heal a Character. 
-        * Dead characters cannot be healed x
-        * Healing cannot raise health above 1000 
+    X- All Characters, when created, have:
+    X    * Health, starting at 1000 
+    X    * Level, starting at 1 
+    X    * May be Alive or Dead, starting Alive (Alive may be a true/false) 
+    X- Characters can Deal Damage to Characters.
+    X    * Damage is subtracted from Health 
+    X    * When damage received exceeds current Health, Health becomes 0 and the character dies 
+    X- A Character can Heal a Character. 
+    X    * Dead characters cannot be healed 
+    X    * Healing cannot raise health above 1000
 
 2. Iteration Two:
     - A Character cannot Deal Damage to itself.
