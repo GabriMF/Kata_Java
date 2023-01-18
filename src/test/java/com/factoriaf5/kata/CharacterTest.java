@@ -7,6 +7,17 @@ import org.junit.jupiter.api.Test;
 public class CharacterTest {
     
     @Test
+    public void canHealTest(){
+        //given
+        Character character = new Character();
+        //when
+        character.currentHealth = 50;
+        //then
+        boolean canHealTest = character.healer();
+        assertEquals(true, canHealTest);
+    }
+
+    @Test
     public void damageTest() {
         //given
         Character character = new Character();
