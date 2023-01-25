@@ -42,7 +42,7 @@ public class CharacterTest {
         //given
         Character character = new Character();
         //When
-        character.currentHealth = 0 ;
+        character.damage = 1000 ;
         //Then
         boolean isItAlive = character.isAlive;
         assertEquals(false, isItAlive);
@@ -53,9 +53,17 @@ public class CharacterTest {
         //given
         Character character = new Character();
         //when
-        character.currentHealth = 50;
+        character.currentHealth = 500;
+        character.characterCanHeal();
         //then
         boolean canHealTest = character.canHeal;
         assertEquals(true, canHealTest);
+    }
+
+    @Test
+    public void healedTest(){
+        Character character = new Character();
+        character.heal = 1000;
+
     }
 }
