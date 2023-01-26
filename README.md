@@ -24,8 +24,8 @@ Complete each iteration before reading the next one. 2. It's recommended you per
     XX    * Damage is subtracted from Health 
     XX    * When damage received exceeds current Health, Health becomes 0 and the character dies 
     X- A Character can Heal a Character. 
-    X    * Dead characters cannot be healed 
-    X    * Healing cannot raise health above 1000
+    XX    * Dead characters cannot be healed 
+    XX    * Healing cannot raise health above 1000
 
 2. Iteration Two:
     - A Character cannot Deal Damage to itself.

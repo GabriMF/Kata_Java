@@ -10,7 +10,8 @@ public class Character {
     public boolean canHeal;
     public int heal;
 
- // ================================================ \\
+ // ==================== Iteration 1 ========================== \\
+ // ==================== Character Stats ====================== \\
     public void health(){
         if(currentHealth <= 1){
             isAlive = true;
@@ -28,33 +29,39 @@ public class Character {
         return currentHealth;
     }
 
-    public void characterCanHeal(){
+    public boolean characterCanHeal(){
         if(currentHealth < 1000 && isAlive == true){
             canHeal = true;
         }
         else{
             canHeal = false;
         }
-        if(canHeal == true){
-            healer();
-        }
+        return canHeal;
     }
 
     public void healer(){
-        // if(currentHealth < 1000 && isAlive == true){
-        //     canHeal = true;
-        // }
+        if(canHeal == true){
+            maxHeal();
+        } 
+    }
 
-        // if(isAlive == false){
-        //     canHeal = false;
-        // }
-
+    public int maxHeal(){
+        
         if(canHeal = true){
             this.currentHealth = currentHealth + heal;
         }
 
         if (currentHealth > 1000){
             this.currentHealth = 1000;
+        }
+        return currentHealth;
+    }
+
+    // ====================== Iteration 2 ======================== \\
+    // ================== character Interactions ================= \\
+    public Character (String characterName, int health, int level, boolean isAlive, int damage, int currentHealth, boolean canHeal, int heal){
+        if(characterName == this.characterName){
+            damage = 0;
         }
     }
 }

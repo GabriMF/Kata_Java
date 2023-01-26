@@ -53,10 +53,10 @@ public class CharacterTest {
         //given
         Character character = new Character();
         //when
-        character.currentHealth = 500;
-        character.characterCanHeal();
+        character.currentHealth = 50;
+        character.isAlive = true;
         //then
-        boolean canHealTest = character.canHeal;
+        boolean canHealTest = character.characterCanHeal();
         assertEquals(true, canHealTest);
     }
 
@@ -64,6 +64,9 @@ public class CharacterTest {
     public void healedTest(){
         Character character = new Character();
         character.heal = 1000;
-
+        int result = character.maxHeal();
+        assertEquals(1000, result);
     }
+
+    
 }
